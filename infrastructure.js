@@ -24,12 +24,12 @@ var infrastructure =
 
     // Launch green slice
     //exec('forever start deploy/blue-www/main.js 9090');
-    exec('forever -w --watchDirectory=../deploy/blue-www start ../deploy/blue-www/main.js 9090');
+    exec('forever -w --watchDirectory=./deploy/blue-www start ./deploy/blue-www/main.js 9090');
     console.log("blue slice");
 
     // Launch blue slice
     //exec('forever start deploy/green-www/main.js 5060');
-    exec('forever -w --watchDirectory=../deploy/green-www start ../deploy/green-www/main.js 9090');
+    exec('forever -w --watchDirectory=./deploy/green-www start ./deploy/green-www/main.js 9090');
       //CHANGED A COMMENT FOR TESTING!
     
     console.log("green slice");
